@@ -15,7 +15,7 @@ Reasons to use PerfectAPI (Current Feature list)
  - You care about performance - [4 times faster than node-restify](http://blog.perfectapi.com/2012/benchmarking-apis-using-perfectapi-vs-express.js-vs-restify.js/)
  - Easily create a self-hosted server with command-line - `myapp server -p 3002`
  - Support for easy configuration via environment variables
- - Awesomely amazing test page for your users to learn/experiment/test your API, e.g. [amigen api test page](http://services.perfectapi.com:3000/amigen/testapp/)
+ - Awesomely amazing test page for your users to learn/experiment/test your API, e.g. [amigen api test page](http://services.perfectapi.com/amigen/testapp/)
  - Windows and Linux installers (run your API as a true service on your server) - `myapp install myappservicename`
  - Automatic validation of required parameters (no need to code boring validation)
  - Local command-line access to your API
