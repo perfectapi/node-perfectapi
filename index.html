@@ -24,7 +24,7 @@
       <div id="banner">
         <span id="logo"></span>
 
-        <a href="https://github.com/perfectapi/node-perfectapi" class="button fork"><strong>Fork On GitHub</strong></a>
+        <a href="https://github.com/perfectapi/node-perfectapi" class="button fork"><strong>View On GitHub</strong></a>
         <div class="downloads">
           <span>Downloads:</span>
           <ul>
@@ -32,7 +32,6 @@
             <li><a href="https://github.com/perfectapi/node-perfectapi/tarball/master" class="button">TAR</a></li>
           </ul>
         </div>
-
       </div><!-- end banner -->
 
     <div class="wrapper">
@@ -40,7 +39,11 @@
         <ul></ul>
       </nav>
       <section>
-        <h2>Package Goals</h2>
+        <h2>Note</h2>
+
+<p>I am not currently maintaining this package. You should probably look for another tool for what you need.</p>
+
+<h2>Package Goals</h2>
 
 <p>The goals of this package are to support:</p>
 
@@ -209,7 +212,7 @@ myNodeLib.callApi('myCommand', config, function(err, result) {
 <li>references a proxy endpoint (e.g. <a href="http://myserver.com:3000/apis">http://myserver.com:3000/apis</a>) instead of the downloaded Node package</li>
 <li>user code executes in a callback (because we have to wait for the endpoint to be validated and the proxy created)</li>
 </ul><pre><code>var perfectapi = require('perfectapi');
-perfectapi.proxy('<a href="http://myserver.com:3000/apis">http://myserver.com:3000/apis</a>', function(err, test1) {
+perfectapi.proxy('http://myserver.com:3000/apis', function(err, test1) {
 
     var config = {}
     test1.mycommand(config, function(err, result) {
@@ -225,7 +228,7 @@ perfectapi.proxy('<a href="http://myserver.com:3000/apis">http://myserver.com:30
 
 <h2>Usage from C# (.NET Framework 4.0 or higher)</h2>
 
-<p>When running as a service, the service endpoint exposes a C# client at <code><a href="http://myserver.com/myapi/myapi.cs">http://myserver.com/myapi/myapi.cs</a></code>.  You should downloaded that file (once) and incorporate it into your C# project.  You will need the following references in your project, and you will need to target .NET 4 or later:</p>
+<p>When running as a service, the service endpoint exposes a C# client at <code>http://myserver.com/myapi/myapi.cs</code>.  You should downloaded that file (once) and incorporate it into your C# project.  You will need the following references in your project, and you will need to target .NET 4 or later:</p>
 
 <ul>
 <li>System</li>
@@ -271,7 +274,7 @@ namespace example
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
