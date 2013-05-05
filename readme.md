@@ -1,3 +1,7 @@
+Note
+----
+I am not currently maintaining this package.  You should probably look for another tool for what you need.  
+
 Package Goal
 ------------
 The goals of this package are to support:
